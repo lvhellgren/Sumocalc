@@ -105,7 +105,7 @@ def create_results_frame(container, response_handler):
 
     # Create the Sun row
     sun_label = ttk.Label(frame, text="Sun")
-    sun_label.grid(row=1, column=1, pady=5)
+    sun_label.grid(row=1, column=1, pady=5, sticky='w')
 
     sun_rise_entry = ttk.Entry(frame, width=10, textvariable=response_handler.sun_rise)
     sun_rise_entry.grid(row=1, column=2)
@@ -115,7 +115,7 @@ def create_results_frame(container, response_handler):
     
     # Create the Moon row
     moon_label = ttk.Label(frame, text="Moon")
-    moon_label.grid(row=2, column=1, pady=5)
+    moon_label.grid(row=2, column=1, pady=5, sticky='w')
 
     moon_rise_entry = ttk.Entry(frame, width=10, textvariable=response_handler.moon_rise)
     moon_rise_entry.grid(row=2, column=2)
@@ -155,7 +155,7 @@ def create_main_window():
     param_frame = create_param_frame(root, request_handler)
     param_frame.pack(pady=15, ipady=5, fill='x')
 
-    # Create the calculate buttonls
+    # Create the calculate button
     calc_button = ttk.Button(root,
         text='Calculate',
         command=lambda: calculate(request_handler, response_handler)
