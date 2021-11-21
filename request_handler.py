@@ -16,9 +16,9 @@ class RequestHandler:
     # Used for printing the object content
     def __str__(self):
         return f'''RequestHandler(
-            {self._date}
-            {self._latitude}, {self._latitude_dir},
-            {self._longitude}, {self._longitude_dir})'''
+            {'Date:'} {self._date}
+            {'Latitude:'} {self._latitude}, {self._latitude_dir}
+            {'Longitude:'} {self._longitude}, {self._longitude_dir})'''
 
     def _build_msg(self, msg, sub_msg):
         if len(msg) > 0:
