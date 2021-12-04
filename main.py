@@ -162,7 +162,8 @@ def create_main_window():
     root.geometry(f'{window_width}x{window_height}+{center_x}+{center_y}')
 
     # Create application description
-    image = tk.PhotoImage(file='/Users/acme/UCSB/Sumocalc/assets/sumo_icon_xs.png')
+    # image = tk.PhotoImage(file='/Users/acme/UCSB/Sumocalc/assets/sumo_icon_xs.png')
+    image = tk.PhotoImage(file='./assets/sumo_icon_xs.png')
     description_label = ttk.Label(root,
         image=(image),
         compound='left',
