@@ -120,7 +120,6 @@ class Calculator:
         if request.get_timezone_sign() == '-':
             timezone = - timezone
 
-        print(f'timezone: {timezone}')
         sunrise = self.sun_rise_set(date, latitude, longitude, True) + timezone
         response.set_sun_rise(self.time_hh_mm(sunrise))
 
