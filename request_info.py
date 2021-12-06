@@ -41,7 +41,7 @@ class RequestInfo:
              msg = self._build_msg(msg, '- Longitude value must be 0 - 180')
         
         if self._timezone < -12 or self._timezone > 12:
-             msg = self._build_msg(msg, '- Timezone must be 0 - 12')
+             msg = self._build_msg(msg, '- Timezone value must be 0 - 12')
         
         status = True
         print(msg)

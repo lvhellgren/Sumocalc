@@ -27,7 +27,6 @@ class Calculator:
 
         return f'{hh}:{mm}'
 
-
     # Returns UTC time for sunrise/sunset
     def sun_rise_set(self, date, lat, lon, sunrise):
         zenith = 90
